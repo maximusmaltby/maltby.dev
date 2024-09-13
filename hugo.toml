@@ -1,4 +1,3 @@
 baseURL = 'https://maltby.dev'
 languageCode = 'en-gb'
 title = 'maltby.dev'
-theme = 'hugo-theme-stack'
