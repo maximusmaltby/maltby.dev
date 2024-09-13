@@ -1,3 +1,4 @@
 baseURL = 'https://maltby.dev'
 languageCode = 'en-gb'
 title = 'maltby.dev'
+theme = 'hello-friend'
