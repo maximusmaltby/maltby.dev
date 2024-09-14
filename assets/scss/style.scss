@@ -37,6 +37,14 @@ html {
   line-height: 1.6;
   letter-spacing: .06em;
   scroll-behavior: smooth;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 html, body {
@@ -46,11 +54,28 @@ html, body {
   overflow: hidden;
 }
 
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container, .wrapper {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1em;
+  }
+
+  footer {
+    padding: 0.5em;
+  }
 }
 
 body,
@@ -348,6 +373,7 @@ table {
   font-size: .9em;
   margin-bottom: 96px;
   margin-top: 64px;
+  flex-shrink: 0;
 
   p {
     margin: 0;
