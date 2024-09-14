@@ -32,19 +32,6 @@
   }
 }
 
-html {
-  background: $portfolio;
-  line-height: 1.6;
-  letter-spacing: .06em;
-  scroll-behavior: smooth;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -347,7 +334,6 @@ table {
   font-size: .9em;
   margin-bottom: 96px;
   margin-top: 64px;
-  flex-shrink: 0;
 
   p {
     margin: 0;
@@ -357,7 +343,6 @@ table {
 // Spotlight
 //
 #spotlight {
-  flex-grow: 1;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
