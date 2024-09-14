@@ -39,6 +39,13 @@ html, body {
   overflow: hidden;
 }
 
+html {
+  background: $portfolio;
+  line-height: 1.6;
+  letter-spacing: .06em;
+  scroll-behavior: smooth;
+}
+
 body,
 button,
 input,
