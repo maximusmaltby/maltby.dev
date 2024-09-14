@@ -54,13 +54,6 @@ html, body {
   overflow: hidden;
 }
 
-.main-content {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .container, .wrapper {
   height: 100vh;
   display: flex;
