@@ -37,14 +37,12 @@ html {
   line-height: 1.6;
   letter-spacing: .06em;
   scroll-behavior: smooth;
-  background-size: cover;
-  background-position: center;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 html, body {
@@ -52,23 +50,6 @@ html, body {
   padding: 0;
   height: 100%;
   overflow: hidden;
-}
-
-.container, .wrapper {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (max-width: 768px) {
-  .main-content {
-    padding: 1em;
-  }
-
-  footer {
-    padding: 0.5em;
-  }
 }
 
 body,
@@ -376,6 +357,7 @@ table {
 // Spotlight
 //
 #spotlight {
+  flex-grow: 1;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
