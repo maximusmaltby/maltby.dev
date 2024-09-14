@@ -10,11 +10,7 @@ enableGitInfo = true
 
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
-#hasCJKLanguage = true
 
-rssLimit = 10
-
-copyright = "This work is licensed under the MIT License."
 enableEmoji = true
 
 [frontmatter]
@@ -23,31 +19,11 @@ lastmod = ["lastmod", ":git", "date", "publishDate"]
 publishDate = ["publishDate", "date"]
 expiryDate = ["expiryDate"]
 
-
 [params.author]
-  name = "Maximus Maltby"
-  about = "CHANGE SITE AUTHOR ABOUT"
-
-[blackfriday]
-  # hrefTargetBlank = true
-  # noreferrerLinks = true
-  # nofollowLinks = true
+  name = "maltby.dev"
 
 [taxonomies]
   tag = "tags"
-  # Categories are disabled by default.
-  # category = "categories"
-
-# Enable to get proper Mathjax support
-#[markup]
-#  [markup.goldmark]
-#    [markup.goldmark.extensions]
-#      [markup.goldmark.extensions.passthrough]
-#        enable = true
-#        [markup.goldmark.extensions.passthrough.delimiters]
-#          block = [['\[', '\]'], ['$$', '$$']]
-#          inline = [['\(', '\)']]
-
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -55,14 +31,14 @@ expiryDate = ["expiryDate"]
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
-  # description = "CHANGE ME SITE DESCRIPTION"
+  description = "maltby.dev"
   # images = [""]
   themeColor = "#494f5c"
 
-  homeSubtitle = "maltby.dev"
+  # homeSubtitle = "maltby.dev"
   footerCopyright = '<a href="https://opensource.org/license/mit" target="_blank" rel="noopener">MIT</a>'
-  # bgImg = ""
-  # gitUrl = "https://github.com/1bl4z3r/hermit-V2/tree/staging"
+  bgImg = "https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHN0YXJyeSUyMHNreXxlbnwwfHwwfHx8MA%3D%3D"
+  gitUrl = "https://github.com/maximusmaltby/maltby.dev"
 
   justifyContent = false
 
@@ -73,7 +49,7 @@ expiryDate = ["expiryDate"]
   scrollToTop = true 
   global_mathjax = false
   readTime = true
-  readTimeSeparator = "CHANGE ME READ TIME"
+  readTimeSeparator = ""
   # legacyLayout = false
   shareSocial = true
   # googleTagManager = "GTM-XXXXXXXX"
