@@ -46,6 +46,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 body,
 button,
 input,
@@ -339,17 +345,19 @@ table {
 #site-footer {
   text-align: center;
   font-size: .9em;
-  margin-bottom: 96px;
-  margin-top: 64px;
-
-  p {
-    margin: 0;
-  }
+  margin: auto 0 0 0;
+  padding: 1em;
+  background: $portfolio;
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
 }
 
 // Spotlight
 //
 #spotlight {
+  flex-grow: 1;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -944,6 +952,12 @@ a.footnote-ref {
       margin: 0;
     }
   }
+
+  #site-footer {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 0.5em;
+  }
 }
 
 @media (max-width: 520px) {
@@ -965,6 +979,12 @@ a.footnote-ref {
   #home-subtitle {
     font-size: 0.5em;
   }
+
+  #site-footer {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 0.3em;
+  }
 }
 
 .human{
@@ -974,24 +994,32 @@ a.footnote-ref {
 
 // If homeSubtitlePrinter is true
 {{ if .Site.Params.homeSubtitlePrinter }}
-  #home-subtitle{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .5em solid $typewriter; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto 1.5em auto; /* Gives that scrolling effect as the typing happens */
-    // letter-spacing: .100em; /* Adjust as needed */
-    animation: typing 5s steps({{ strings.RuneCount .Site.Params.homeSubtitle }}, end),blink-caret .75s linear 5.1s infinite;
+  #home-subtitle {
+    min-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto 1.5em auto;
+    display: inline-block;
+    position: relative;
   }
 
-  /* The typing effect */
-  @keyframes typing {
-    from {max-width: 0;}
-    to {max-width: 100%;}
+  .cursor {
+    display: inline-block;
+    width: 0.1em; /* Fixed width for consistent thickness */
+    height: 1.3em; /* Set a consistent height */
+    background-color: $text; /* Adjust to your design */
+    vertical-align: baseline; /* Align cursor to the text baseline */
+    position: relative;
+    top: 0.35em;
   }
 
-  /* The typewriter cursor effect */
+  .blink {
+    animation: blink-caret .75s step-end infinite;
+  }
+
   @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: $typewriter}
+    from, to { background-color: transparent; }
+    50% { background-color: $text; }
   }
+
 {{ end }}
