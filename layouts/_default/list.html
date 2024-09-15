@@ -19,12 +19,15 @@
 				{{- range where .Site.Pages ".Params.pin" true }}
 				<li class="pinned-post-item">
 					{{- partial "svg.html" (dict "context" . "name" $pin_name) }}
-					<a href="{{.Permalink}}"><span class="post-title">{{.Title}}</span></a>
+					<a href="https://download.maltby.dev/{{ .File.TranslationBaseName | default .Permalink }}">
+						<span class="post-title">{{.Title}}</span>
+					</a>
 				</li>
 				{{- end }}
 			</ul>
 		</div>
 		{{- end -}}
+
 		{{- range .Data.Pages.GroupByDate "2006" }}
 		{{ $pages := len (.Pages) }}
 		{{ $pages_pin := len ( where .Pages ".Params.pin" "eq" true) }}
