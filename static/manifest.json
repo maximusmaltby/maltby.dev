@@ -1,0 +1,17 @@
+{
+    "name": "maltby.dev",
+    "short_name": "maltby.dev",
+    "description": "maltby.dev",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#303030",
+    "theme_color": "#303030",
+    "icons": [
+      {
+        "src": "images/icon.webp",
+        "sizes": "512x512",
+        "type": "image/webp"
+      }
+    ]
+  }
+  
