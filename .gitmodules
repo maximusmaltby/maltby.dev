@@ -2,9 +2,9 @@
 	path = themes/hermit-v2
 	url = https://github.com/1bl4z3r/hermit-V2
 	branch = main
-[submodule "download"]
-	path = download
-	url = https://github.com/maximusmaltby/download.maltby.dev.git
 [submodule "portfolio"]
 	path = portfolio
 	url = https://github.com/maximusmaltby/portfolio.maltby.dev.git
+[submodule "download"]
+	path = download
+	url = https://github.com/maximusmaltby/download.maltby.dev.git
