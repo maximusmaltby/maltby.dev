@@ -33,9 +33,13 @@
 			<ul class="posts-list">
 				{{- range where .Pages ".Params.pin" "ne" true }}
 				<li class="post-item">
-					<a href="{{.Permalink}}">
-						<span class="post-title">{{.Title}}</span>
-					</a>
+					{{ if .File }}
+						<a href="https://download.maltby.dev/{{ .File.TranslationBaseName }}">
+							<span class="post-title">{{.Title}}</span>
+						</a>
+					{{ end }}
+					{{ else }}
+      					<span class="post-title">{{.Title}}</span>
 					{{- if and .Page.Params.description .Site.Params.descriptionInPosts -}}
 					<span class="post-description">{{ .Page.Params.description }}</span>
 					{{- end -}}
