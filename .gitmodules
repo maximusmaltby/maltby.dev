@@ -1,10 +1,10 @@
 [submodule "themes/hermit-v2"]
 	path = themes/hermit-v2
-	url = https://github.com/1bl4z3r/hermit-V2
+	url = git@github.com:1bl4z3r/hermit-V2
 	branch = main
 [submodule "portfolio"]
 	path = portfolio
-	url = https://github.com/maximusmaltby/portfolio.maltby.dev.git
+	url = git@github.com:maximusmaltby/portfolio.maltby.dev.git
 [submodule "download"]
 	path = download
 	url = git@github.com:maximusmaltby/download.maltby.dev.git
