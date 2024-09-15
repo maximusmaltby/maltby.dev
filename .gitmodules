@@ -7,4 +7,4 @@
 	url = https://github.com/maximusmaltby/portfolio.maltby.dev.git
 [submodule "download"]
 	path = download
-	url = https://github.com/maximusmaltby/download.maltby.dev.git
+	url = git@github.com:maximusmaltby/download.maltby.dev.git
