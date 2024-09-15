@@ -80,3 +80,8 @@ expiryDate = ["expiryDate"]
     name = "portfolio"
     url = "https://portfolio.maltby.dev"
     weight = 9
+
+  [[menu.main]]
+    name = "downloads"
+    url = "downloads/"
+    weight = 10
