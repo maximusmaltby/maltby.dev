@@ -1,25 +1,33 @@
-.site_title, .site-title {
+#site-header .site-title, 
+.header-title,
+a.site-title {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    pointer-events: none;
+}
+
+#site-header .site-subtitle, 
+.header-subtitle {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
     cursor: default;
 }
 
-.site_subtitle, .site-description {
+.menu-item a, 
+.menu-link,
+#menu .menu-item {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    cursor: default;
+    cursor: pointer; 
 }
 
-.menu-item, .menu-link, nav.menu {
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: pointer;
-}
-
-footer.site-footer, .copyright {
+footer, 
+.site-footer, 
+.footer-copyright {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;

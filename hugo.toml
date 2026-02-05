@@ -37,7 +37,7 @@ expiryDate = ["expiryDate"]
   themeColor = "#494f5c"
 
   homeSubtitle = "~/>&nbsp;"
-  footerCopyright = '<a href="https://opensource.org/license/mit" target="_blank" rel="noopener">MIT</a>'
+  footerCopyright = '<span style="user-select:none; -webkit-user-select:none;"><a href="https://opensource.org/license/mit" target="_blank" rel="noopener">MIT</a></span>'
   bgImg = "https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHN0YXJyeSUyMHNreXxlbnwwfHwwfHx8MA%3D%3D"
   gitUrl = "https://github.com/maximusmaltby/maltby.dev"
 
@@ -66,6 +66,7 @@ expiryDate = ["expiryDate"]
   # allowRobots = "index, follow"
   # siteNoIndex = false
   # noIndexPages = ["404 Page not found"]
+  customCSS = ["css/custom.css"]
 
   [[params.socialLinks]]
     name = "github"
