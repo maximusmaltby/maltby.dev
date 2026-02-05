@@ -66,7 +66,6 @@ expiryDate = ["expiryDate"]
   # allowRobots = "index, follow"
   # siteNoIndex = false
   # noIndexPages = ["404 Page not found"]
-  customCSS = ["css/custom.css"]
 
   [[params.socialLinks]]
     name = "github"
