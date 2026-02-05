@@ -24,6 +24,7 @@ expiryDate = ["expiryDate"]
 
 [taxonomies]
   tag = "tags"
+  category = "categories"
 
 [params]
   dateform        = "Jan 2, 2006"

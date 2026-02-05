@@ -1,0 +1,35 @@
+{{ define "main" }}
+<main class="site-main section-inner thin animated fadeIn faster">
+    
+    <h1>Downloads</h1>
+
+    {{/* Loop through all Categories */}}
+    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        
+        {{/* Only show category if it has pages from the 'downloads' section */}}
+        {{ $sectionPages := where $taxonomy.Pages "Section" "downloads" }}
+        
+        {{ if gt (len $sectionPages) 0 }}
+            <div class="category-group" style="margin-bottom: 40px;">
+                
+                {{/* This renders the Category Name (e.g. "Red Dead Modding Tool") */}}
+                <h2>{{ $name | humanize | title }}</h2>
+                
+                <div class="posts-group">
+                    <ul class="posts-list">
+                        {{ range $sectionPages }}
+                        <li class="post-item">
+                            <a href="{{ .Permalink }}">
+                                <span class="post-title">{{ .Title }}</span>
+                                <span class="post-day">{{ .Date.Format "Jan 2, 2006" }}</span>
+                            </a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        {{ end }}
+    {{ end }}
+
+</main>
+{{ end }}

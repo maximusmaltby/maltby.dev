@@ -7,9 +7,11 @@ featuredImg: ""
 description : ''
 tags:
   - rdmt
+categories:
+  - "Red Dead Modding Tool"
 author : Maximus Maltby
 scrolltotop : true
 toc : true
 mathjax : false
-pin: true
+pin: false
 ---
