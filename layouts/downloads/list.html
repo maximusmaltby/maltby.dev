@@ -3,17 +3,14 @@
     
     <h1>Downloads</h1>
 
-    {{/* Loop through all Categories */}}
     {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
         
-        {{/* Only show category if it has pages from the 'downloads' section */}}
         {{ $sectionPages := where $taxonomy.Pages "Section" "downloads" }}
         
         {{ if gt (len $sectionPages) 0 }}
             <div class="category-group" style="margin-bottom: 40px;">
                 
-                {{/* This renders the Category Name (e.g. "Red Dead Modding Tool") */}}
-                <h2>{{ $name | humanize | title }}</h2>
+                <h2>{{ ($.Site.GetPage (printf "categories/%s" $name)).Title | default ($name | humanize | title) }}</h2>
                 
                 <div class="posts-group">
                     <ul class="posts-list">
