@@ -30,7 +30,6 @@
 
 <link rel="icon" type="image/webp" href="/images/icon.webp">
 <style>
-    /* 1. Global Kill Switch: Disable selection on EVERYTHING */
     *, *::before, *::after {
         -webkit-user-select: none !important;
         -moz-user-select: none !important;
@@ -39,12 +38,18 @@
         cursor: default; 
     }
 
-    /* 2. Exception: Links must still show the "Clicky Hand" cursor */
     a, button, input[type="submit"], input[type="button"], .menu-item {
         cursor: pointer !important;
     }
 
-    /* 3. Exception: Allow typing in Inputs/Search bars */
+    .post-item, .post-item a, .post-title, .post-day {
+        -webkit-user-select: text !important;
+        -moz-user-select: text !important;
+        -ms-user-select: text !important;
+        user-select: text !important;
+        cursor: pointer !important;
+    }
+
     input, textarea, [contenteditable] {
         -webkit-user-select: text !important;
         -moz-user-select: text !important;
