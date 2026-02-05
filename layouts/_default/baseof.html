@@ -25,6 +25,7 @@
 {{- range .Params.custom_css -}}
 {{ $c_css := resources.Get . | resources.ExecuteAsTemplate "css/style.css" $rootCtx | toCSS | minify | fingerprint -}}
 <link rel="stylesheet preload prefetch" as="style" href="{{ $c_css.Permalink }}" {{ printf "integrity=%q" $c_css.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous">
+<link rel="stylesheet" href="/css/custom.css">
 {{- end -}}
 {{- block "head" . -}}{{- end -}}
 {{- if templates.Exists "partials/extra-head.html" -}}{{- partial "extra-head.html" . -}}{{- end -}}
